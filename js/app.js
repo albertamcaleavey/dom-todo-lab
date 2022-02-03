@@ -2,8 +2,9 @@ const inputElement = document.getElementById('inp')
 
 const buttonElement = document.getElementById('submit-button')
 
-
 const ulElement = document.getElementById('todo-list')
+
+const resetButton = document.getElementById('reset-button')
 
 
 buttonElement.addEventListener('click', function(event){
@@ -24,3 +25,5 @@ if(inputElement.value !== ''){
 }
    
 })
+
+resetButton.addEvent
