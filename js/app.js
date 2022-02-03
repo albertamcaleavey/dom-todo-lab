@@ -4,15 +4,12 @@ const buttonElement = document.getElementById('submit-button')
 
 const ulElement = document.getElementById('todo-list')
 
-const resetButton = document.getElementById('reset-button')
-
 
 buttonElement.addEventListener('click', function(event){
   const newLi = document.createElement('li')
   // create a new li element
   
   newLi.textContent = inputElement.value
-  console.log(newLi)
   // set the text of the new li element to the text the user entered in input
 
 if(inputElement.value !== ''){
@@ -26,4 +23,14 @@ if(inputElement.value !== ''){
    
 })
 
-resetButton.addEvent
+// RESET BUTTON
+
+const resetButton = document.getElementById('reset-button')
+
+resetButton.addEventListener('click', function(event){
+  ulElement.remove()
+  // remove all items from list 
+  inputElement.value = ''
+  // reset the input to empty
+})
+
