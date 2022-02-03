@@ -34,3 +34,11 @@ resetButton.addEventListener('click', function(event){
   // reset the input to empty
 })
 
+
+//  DELETE AN ITEM ON CLICK
+
+ulElement.addEventListener('click', function(event){
+  let listItems = document.querySelectorAll('li')
+  console.log(listItems)
+  
+})
