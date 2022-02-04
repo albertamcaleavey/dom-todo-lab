@@ -35,10 +35,3 @@ resetButton.addEventListener('click', function(event){
 })
 
 
-//  DELETE AN ITEM ON CLICK
-
-ulElement.addEventListener('click', function(event){
-  let listItems = document.querySelectorAll('li')
-  console.log(listItems)
-  
-})
